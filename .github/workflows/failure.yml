@@ -37,7 +37,6 @@ jobs:
     runs-on: ubuntu-latest
     needs:
     - cat
-    - one
     - thr
     if: failure()
     steps:

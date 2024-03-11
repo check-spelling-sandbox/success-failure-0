@@ -17,7 +17,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Live
-        run: exit 1
+        run: exit 0
 
   thr:
     runs-on: ubuntu-latest

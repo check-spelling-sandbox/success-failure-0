@@ -25,11 +25,18 @@ jobs:
       - two
     steps:
       - name: Live
-        run: exit 0  
+        run: exit 0
+
+  cat:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Live
+        run: exit 0        
 
   dependent:
     runs-on: ubuntu-latest
     needs:
+    - cat
     - one
     - thr
     if: failure()

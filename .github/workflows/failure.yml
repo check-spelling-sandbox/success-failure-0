@@ -22,6 +22,7 @@ jobs:
   thr:
     runs-on: ubuntu-latest
     needs:
+      - one
       - two
     steps:
       - name: Live

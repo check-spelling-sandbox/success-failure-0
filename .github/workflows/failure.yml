@@ -16,8 +16,8 @@ jobs:
   bad:
     runs-on: ubuntu-latest
     steps:
-      - name: Die
-        run: exit 1
+      - name: Live
+        run: exit 0
 
   dependent:
     runs-on: ubuntu-latest
